@@ -19,6 +19,14 @@ nav {
     z-index: 1000;
 }
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: var(--navy-blue); /* Set the background color of the entire nav bar */
+}
+
 nav ul li {
     margin: 0 20px;
     flex-grow: 1; /* Distribute equal space for each list item */
