@@ -254,7 +254,7 @@ h3 {
 }
 
 #about {
-    padding-bottom: 10px; /* Reduce the padding to minimize the gap */
+    padding-bottom: 5px; /* Reduce the padding to minimize the gap */
 }
 
 nav ul {
@@ -365,7 +365,7 @@ nav ul li:hover a {
     grid-template-columns: repeat(4, 1fr); /* Four columns */
     grid-auto-rows: auto; /* Automatically sized rows */
     grid-gap: 20px; /* Add gap between awards */
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .award {
@@ -394,7 +394,7 @@ nav ul li:hover a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Three columns with auto-fit */
     grid-gap: 20px; /* Gap between projects */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .project {
