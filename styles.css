@@ -572,3 +572,7 @@ body {
 .project:hover .project-name {
     opacity: 1;
 }
+
+.award:hover {
+    color: black;
+}
