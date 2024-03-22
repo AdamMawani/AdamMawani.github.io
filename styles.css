@@ -414,13 +414,15 @@ margin: 5px 0;
 .project-container {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 }
 
 .project {
-width: 50%; /* Two columns */
+width: calc(30% - 10px);
+margin: 0 5px;
 padding: 10px;
 box-sizing: border-box;
-}
+}  
 
 .project a {
 display: block;
@@ -439,24 +441,6 @@ transition: transform 0.3s ease;
 transform: scale(1.1);
 }
 
-.overlay {
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.7);
-color: white;
-padding: 10px;
-box-sizing: border-box;
-transition: bottom 0.3s ease;
-opacity: 0;
-}
-
-.project a:hover .overlay {
-bottom: 0;
-opacity: 1;
-}
-  
 nav, h1, h2, h3, h4, h5, h6, p, li, a {
     color: var(--navy-blue); /* Set default text color to navy blue */
 }
