@@ -525,7 +525,7 @@ body {
 .dark-mode #awards,
 .dark-mode #skills,
 .dark-mode #contact {
-    background-color: #000; /* Change grey background sections to black */
+    background-color: var(--charcoal-gray); /* Change grey background sections to black */
 }
 
 .dark-mode nav,

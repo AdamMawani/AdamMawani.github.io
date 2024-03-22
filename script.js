@@ -115,5 +115,11 @@ function detectDarkModePreference() {
     }
 }
 
-// Call detectDarkModePreference to set dark mode based on user's system preference
 detectDarkModePreference();
+
+const darkModeButton = document.getElementById('dark-mode-button');
+const body = document.body;
+
+darkModeButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
