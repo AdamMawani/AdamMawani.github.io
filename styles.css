@@ -573,7 +573,7 @@ body {
     opacity: 1;
 }
 
-.award:hover {
+.dark-mode .award:hover {
     color: black;
 }
 

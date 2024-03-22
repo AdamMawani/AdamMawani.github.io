@@ -98,3 +98,22 @@ document.querySelectorAll('.progress-bar').forEach(function(bar) {
         this.querySelector('.progress-overlay').style.display = 'none';
     });
 });
+
+// JavaScript to set default light mode
+document.body.classList.remove('dark-mode');
+
+// JavaScript to toggle dark mode
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+// Function to detect user preference for dark mode (optional)
+function detectDarkModePreference() {
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+}
+
+// Call detectDarkModePreference to set dark mode based on user's system preference
+detectDarkModePreference();
