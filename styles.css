@@ -404,7 +404,7 @@ nav ul li:hover a {
 }
 
 .award:hover {
-    background-color: var(--light-gray);
+    background-color: var(--charcoal-gray);
 }
 
 .projects-container {
@@ -573,10 +573,6 @@ body {
     opacity: 1;
 }
 
-.dark-mode .award:hover {
-    color: black;
-}
-
 .progress-bar {
     position: relative;
 }
@@ -595,4 +591,17 @@ body {
 
 .progress-bar:hover .progress-overlay {
     display: block;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the nav bar stays on top */
+}
+
+#projects {
+    position: relative; /* Ensure the projects section is positioned relative */
+    z-index: 1; /* Ensure the projects section stays behind the nav bar */
 }
