@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
     });
 
-    // Add smooth scrolling for navigation links
     var navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(function(link) {
@@ -49,21 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Dark mode toggle button
     var darkModeToggle = document.getElementById('dark-mode-toggle');
     var body = document.body;
 
-    // Check if dark mode is enabled
     var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
-    // Set initial dark mode state
     if (isDarkMode) {
         enableDarkMode();
     } else {
         disableDarkMode();
     }
 
-    // Toggle dark mode when button is clicked
     darkModeToggle.addEventListener('click', function() {
         isDarkMode = !isDarkMode;
         if (isDarkMode) {
@@ -75,12 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Function to enable dark mode
     function enableDarkMode() {
         body.classList.add('dark-mode');
     }
 
-    // Function to disable dark mode
     function disableDarkMode() {
         body.classList.remove('dark-mode');
     }
@@ -91,11 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var sections = document.querySelectorAll('section');
 
     darkModeToggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode'); // Toggle dark mode for the body
+        document.body.classList.toggle('dark-mode');
 
         // Toggle dark mode for each section
         sections.forEach(function(section) {
             section.classList.toggle('dark-mode');
         });
+    });
+});
+
+document.querySelectorAll('.progress-bar').forEach(function(bar) {
+    bar.addEventListener('mouseleave', function() {
+        this.querySelector('.progress-overlay').style.display = 'none';
     });
 });

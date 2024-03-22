@@ -576,3 +576,23 @@ body {
 .award:hover {
     color: black;
 }
+
+.progress-bar {
+    position: relative;
+}
+
+.progress-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: none;
+}
+
+.progress-bar:hover .progress-overlay {
+    display: block;
+}
