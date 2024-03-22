@@ -395,19 +395,21 @@ nav ul li:hover a {
     margin: 10px;
     border: 1px solid #ccc;
     overflow: hidden; /* Ensure the container respects the image dimensions */
-}
-
-.award-box img {
-display: block;
-width: 100%; /* Ensure the image fills the container */
-height: auto; /* Maintain aspect ratio */
-}
-
-.award-box h3,
-.award-box p {
-text-align: center;
-margin: 5px 0;
-}  
+    width: 200px; /* Set the width of the award box */
+    height: auto; /* Let the height adjust according to the image */
+  }
+  
+  .award-box img {
+    display: block;
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .award-box h3,
+  .award-box p {
+    text-align: center;
+    margin: 5px 0;
+  }  
 
 .projects-container {
     display: grid;
