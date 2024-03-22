@@ -418,7 +418,7 @@ justify-content: center;
 }
 
 .project {
-width: calc(30% - 10px);
+width: calc(25% - 10px);
 margin: 0 5px;
 padding: 10px;
 box-sizing: border-box;
@@ -590,7 +590,6 @@ nav {
 }
 
 #projects {
-    position: relative;
     z-index: 1;
 }
 
