@@ -1,0 +1,552 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--navy-blue);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center; /* Center all content within the container */
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 48px; /* Larger font size for the name */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 24px; /* Smaller font size for subtitles */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 100px 0;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.resume-content h2 {
+    font-size: 28px; /* Larger font size for resume section headers */
+}
+
+#contact {
+    background-color: var(--light-gray); /* Light grey background for contact section */
+    padding: 20px;
+}
+
+#contact ul {
+    display: flex; /* Display icons side by side */
+    justify-content: center; /* Center icons horizontally */
+}
+
+#contact ul li {
+    margin: 0 10px; /* Add space between icons */
+}
+
+#copyright {
+    margin-top: 50px; /* Add space between content and copyright notice */
+    text-align: center;
+    font-size: 14px;
+}
+
+.contact-icon {
+    color: black; /* Change icon color to black */
+}
+
+.contact-icon i {
+    font-size: 4em; /* Increase icon size */
+}
+
+#contact {
+    margin-bottom: 20px; /* Decrease margin bottom for contact section */
+}
+
+#copyright {
+    margin-top: 20px; /* Decrease margin top for copyright statement */
+}
+
+/* Color Palette */
+:root {
+    --navy-blue: #001f3f;
+    --charcoal-gray: #36454F;
+    --slate-gray: #6C757D;
+    --white: #FFFFFF;
+    --light-blue: #ADD8E6;
+    --light-gray: #D3D3D3;
+    --dark-green: #006400;
+    --light-green: #82c961;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--navy-blue); /* Use navy blue for the navigation bar */
+}
+
+nav ul li a {
+    color: var(--white); /* White text for navigation links */
+}
+
+/* Section Backgrounds */
+section {
+    background-color: var(--white); /* White background for sections */
+}
+
+#contact {
+    background-color: var(--light-gray); /* Light gray background for contact section */
+}
+
+/* Accents */
+h1, h2 {
+    color: var(--navy-blue); /* Navy blue for main headings */
+}
+
+.container {
+    color: var(--charcoal-gray); /* Charcoal gray for text content */
+}
+
+.contact-icon {
+    color: var(--dark-green); /* Dark green for contact icons */
+}
+
+.timeline {
+    position: relative;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--navy-blue);
+    border-radius: 50%;
+    position: relative;
+    margin-right: 20px;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    background-color: var(--light-blue);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.duration {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-block {
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-ico {
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 24px; /* Adjust the size of the building icon */
+    display: flex;
+    align-items: center; /* Vertically center the icon */
+}
+
+.timeline-header h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.timeline-header p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.timeline-content h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.timeline-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.timeline-header {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    flex-shrink: 0;
+    width: 60%;
+}
+
+#learn-more-btn {
+    margin-top: 20px; /* Adjust the top margin to add space */
+    background-color: var(--white);
+    color: var(--navy-blue);
+    border: 2px solid var(--navy-blue);
+    padding: 20px; /* Increase padding for larger button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Adjust font size */
+}
+
+#learn-more-btn:hover {
+    background-color: var(--navy-blue);
+    color: var(--white);
+}
+
+#learn-more-btn span {
+    margin-left: 5px;
+}
+
+#about {
+    padding-bottom: 10px; /* Reduce the padding to minimize the gap */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: var(--navy-blue); /* Set the background color of the entire nav bar */
+}
+
+nav ul li {
+    flex-grow: 1; /* Distribute equal space for each list item */
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+nav ul li:hover {
+    background-color: var(--white); /* Change background color of list item when hovered over */
+}
+
+nav ul li:hover a {
+    color: var(--navy-blue); /* Change text color when hovered over */
+}
+
+#education {
+    background-color: var(--light-gray);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.education-header {
+    margin-bottom: 20px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.education-column h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#skills {
+    background-color: var(--light-gray);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px; /* Added margin */
+}
+
+.skills-left {
+    flex: 1;
+    text-align: left;
+}
+
+.skills-right {
+    flex: 1;
+    text-align: center;
+}
+
+.skills-right .progress-bar {
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: var(--slate-gray);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--light-green);
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 45%;
+    }
+}
+.awards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-auto-rows: auto; /* Automatically sized rows */
+    grid-gap: 20px; /* Add gap between awards */
+    margin-top: 20px;
+}
+
+.award {
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.award h3 {
+    font-size: 20px; /* Reduce font size for award titles */
+    margin-bottom: 10px; /* Adjust spacing between award title and issuer/date */
+}
+
+.award p {
+    font-size: 16px; /* Reduce font size for issuer/date */
+    margin: 0; /* Reset margin to remove default spacing */
+    line-height: 1.5; /* Improve line height for readability */
+}
+
+.award:hover {
+    background-color: var(--light-gray);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Three columns with auto-fit */
+    grid-gap: 20px; /* Gap between projects */
+    margin-top: 20px;
+}
+
+.project {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%; /* Make images responsive */
+    display: block; /* Remove default inline spacing */
+}
+
+.project:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); /* Add shadow on hover */
+}
+
+nav, h1, h2, h3, h4, h5, h6, p, li, a {
+    color: var(--navy-blue); /* Set default text color to navy blue */
+}
+
+body {
+    background-color: var(--white); /* Set default background color to white */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    /* Switch text colors */
+    nav, h1, h2, h3, h4, h5, h6, p, li, a {
+        color: var(--white); /* Change text color to white */
+    }
+
+    /* Switch background colors */
+    body {
+        background-color: var(--navy-blue); /* Change background color to navy blue */
+    }
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Add dark mode styles */
+/* Add dark mode styles */
+.dark-mode nav {
+    background-color: #fff; /* Change nav background to white */
+}
+
+.dark-mode nav ul li a {
+    color: #000; /* Change nav link color to black */
+}
+
+.dark-mode section {
+    background-color: #000; /* Change section background to black */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode li {
+    color: #fff; /* Change text color to white */
+}
+
+.dark-mode #learn-more-btn {
+    background-color: #fff; /* Change button background to white */
+    color: #000; /* Change button text color to black */
+}
+
+.dark-mode .container {
+    color: #fff; /* Change container text color to white */
+}
+
+.dark-mode #contact .contact-icon {
+    color: #fff; /* Change contact icon color to white */
+}
+
+.dark-mode .progress-bar .progress {
+    background-color: #fff; /* Change progress bar color to white */
+}
+
+.dark-mode #education,
+.dark-mode #awards,
+.dark-mode #skills,
+.dark-mode #contact {
+    background-color: #000; /* Change grey background sections to black */
+}
+
+.dark-mode nav,
+.dark-mode section {
+    padding: 20px; /* Change padding between sections to black */
+}
+
+.dark-mode nav ul li a {
+    color: white; /* Change text color to white */
+}
+
+.dark-mode nav {
+    background-color: black; /* Change background color to black */
+}
+
+.dark-mode nav ul li a:hover {
+    color: black; /* Change text color to black when hovered over */
+}
+
+/* Light mode */
+#about,
+#experience,
+#awards,
+#projects {
+    background-color: var(--white); /* Light mode background color for specific sections */
+}
+
+/* Dark mode */
+.dark-mode #about,
+.dark-mode #experience,
+.dark-mode #awards,
+.dark-mode #projects {
+    background-color: black; /* Dark mode background color for specific sections */
+}
