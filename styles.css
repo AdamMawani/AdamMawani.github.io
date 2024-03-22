@@ -387,7 +387,7 @@ nav ul li:hover a {
 }
 
 .award:hover {
-    background-color: var(--charcoal-gray);
+    background-color: var(--slate-gray);
 }
 
 .projects-container {
