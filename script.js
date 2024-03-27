@@ -1,38 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Get all project elements
     const projects = document.querySelectorAll('.project');
 
+    // Attach click event listener to each project
     projects.forEach(project => {
         project.addEventListener('click', () => {
             const title = project.getAttribute('data-title');
             const competition = project.getAttribute('data-competition');
             const skills = project.getAttribute('data-skills');
             const description = project.getAttribute('data-description');
-            const imagePath = project.getAttribute('data-image-path');
-            const projectURL = project.getAttribute('data-project-url')
             
+            // Create modal content
             const modalContent = `
                 <div class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <h2>${title}</h2>
-                        <img src="${imagePath}" alt="${title}">
-                        <p><strong>Associated With:</strong> ${competition}</p>
+                        <p><strong>Competition/Program:</strong> ${competition}</p>
                         <p><strong>Skills Demonstrated:</strong> ${skills}</p>
                         <p><strong>Description:</strong> ${description}</p>
-                        <p><a href="${projectUrl}" target="_blank">View Project</a></p>                    </div>
+                        <!-- Add more details as needed -->
+                    </div>
                 </div>
             `;
             
+            // Append modal to body
             document.body.insertAdjacentHTML('beforeend', modalContent);
             
+            // Show modal
             const modal = document.querySelector('.modal');
             modal.style.display = 'block';
             
+            // Close modal when close button is clicked
             const closeBtn = modal.querySelector('.close');
             closeBtn.addEventListener('click', () => {
                 modal.style.display = 'none';
             });
             
+            // Close modal when clicking outside of modal content
             modal.addEventListener('click', (event) => {
                 if (event.target === modal) {
                     modal.style.display = 'none';
