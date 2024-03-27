@@ -615,10 +615,3 @@ img {
 img:hover {
     transform: scale(1.1); /* Zoom effect on hover */
 }
-
-.modal-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
