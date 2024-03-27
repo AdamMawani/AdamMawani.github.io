@@ -9,13 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const competition = project.getAttribute('data-competition');
             const skills = project.getAttribute('data-skills');
             const description = project.getAttribute('data-description');
+            const projectURL = project.getAttribute('data-project-url')
+            const imagePath = project.getAttribute('data-image-path')
             
             // Create modal content
             const modalContent = `
                 <div class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <h2>${title}</h2>
+                        <h2><a href="${projectURL}" target="_blank">${title}</a></h2>
+                        <img src="${imagePath}" alt="${title}" class="modal-image">
                         <p><strong>Competition/Program:</strong> ${competition}</p>
                         <p><strong>Skills Demonstrated:</strong> ${skills}</p>
                         <p><strong>Description:</strong> ${description}</p>
