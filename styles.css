@@ -621,9 +621,4 @@ img:hover {
     height: auto;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease-in-out; /* Add transition for transform property */
-}
-
-.modal-image:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
 }
