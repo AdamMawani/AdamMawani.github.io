@@ -608,10 +608,10 @@ height: auto;
     color: #aaa; /* Light gray color for close button in dark mode */
 }
 
-img {
+.non-modal-image {
     transition: transform 0.3s ease-in-out; /* Transition for transform property */
 }
 
-img:hover {
+.non-modal-image:hover {
     transform: scale(1.1); /* Zoom effect on hover */
 }
