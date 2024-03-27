@@ -556,7 +556,7 @@ height: auto;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 9999; /* Sit on top */
-    left: 0;
+    left: 50;
     top: 0;
     width: 80%; /* Full width */
     height: 80%; /* Full height */
@@ -570,8 +570,6 @@ height: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close {
