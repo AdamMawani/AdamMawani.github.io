@@ -9,9 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const competition = project.getAttribute('data-competition');
             const skills = project.getAttribute('data-skills');
             const description = project.getAttribute('data-description');
-            const projectURL = project.getAttribute('data-project-url')
-            const imagePath = project.getAttribute('data-image-path')
-            
+            const projectURL = project.getAttribute('data-project-url');
+            const imagePath = project.getAttribute('data-image-path');
+
+            // Remove existing modal if any
+            const existingModal = document.querySelector('.modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
             // Create modal content
             const modalContent = `
                 <div class="modal">
@@ -26,20 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             `;
-            
+
             // Append modal to body
             document.body.insertAdjacentHTML('beforeend', modalContent);
-            
+
             // Show modal
             const modal = document.querySelector('.modal');
             modal.style.display = 'block';
-            
+
             // Close modal when close button is clicked
             const closeBtn = modal.querySelector('.close');
             closeBtn.addEventListener('click', () => {
                 modal.style.display = 'none';
             });
-            
+
             // Close modal when clicking outside of modal content
             modal.addEventListener('click', (event) => {
                 if (event.target === modal) {
