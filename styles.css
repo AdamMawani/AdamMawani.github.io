@@ -607,3 +607,8 @@ height: auto;
 .dark-mode .modal-content .close {
     color: #aaa; /* Light gray color for close button in dark mode */
 }
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
