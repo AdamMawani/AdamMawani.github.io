@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <h2><a href="${projectURL}" target="_blank">${title}</a></h2>
+                        <h2>${title}</h2>
                         <img src="${imagePath}" alt="${title}" class="modal-image">
                         <p><strong>Competition/Program:</strong> ${competition}</p>
                         <p><strong>Skills Demonstrated:</strong> ${skills}</p>
                         <p><strong>Description:</strong> ${description}</p>
-                        <!-- Add more details as needed -->
+                        <p><strong>Link:</strong> <a href="${projectURL}" target="_blank">${title}</a></p>
                     </div>
                 </div>
             `;
