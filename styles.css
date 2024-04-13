@@ -143,6 +143,7 @@ section ul li img {
     --light-gray: #D3D3D3;
     --dark-green: #006400;
     --light-green: #82c961;
+    --dark-gray: #2c2b2b;
 }
 
 section {
@@ -354,7 +355,11 @@ h3 {
 }
 
 .award:hover {
-    background-color: var(--slate-gray);
+    background-color: var(--light-gray);
+}
+
+.dark-mode award:hover {
+    background-color: var(--slate-gray)
 }
 
 .award-box {
@@ -435,12 +440,12 @@ transform: scale(1.1);
 
 /* Dark mode styles */
 .dark-mode {
-    background-color: black;
+    background-color: var(--dark-gray);
     color: white;
 }
 
 .dark-mode section {
-    background-color: #000; /* Change section background to black */
+    background-color: var(--dark-gray); /* Change section background to black */
 }
 
 .dark-mode nav {
@@ -448,7 +453,7 @@ transform: scale(1.1);
 }
 
 .dark-mode nav ul li a {
-    color: #000; /* Change nav link color to black */
+    color: var(--dark-gray); /* Change nav link color to black */
 }
 
 .dark-mode h1,
@@ -464,7 +469,7 @@ transform: scale(1.1);
 
 .dark-mode #learn-more-btn {
     background-color: #fff; /* Change button background to white */
-    color: #000; /* Change button text color to black */
+    color: var(--dark-gray); /* Change button text color to black */
 }
 
 .dark-mode .container {
@@ -496,11 +501,11 @@ transform: scale(1.1);
 }
 
 .dark-mode nav {
-    background-color: black;
+    background-color: var(--dark-gray);
 }
 
 .dark-mode nav ul li a:hover {
-    color: black;
+    color: var(--dark-gray);
 }
 
 #about,
@@ -514,7 +519,7 @@ transform: scale(1.1);
 .dark-mode #experience,
 .dark-mode #awards,
 .dark-mode #projects {
-    background-color: black;
+    background-color: var(--dark-gray);
 }
 
 .progress-bar {
