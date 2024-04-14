@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all project elements
     const projects = document.querySelectorAll('.project');
 
-    // Attach click event listener to each project
     projects.forEach(project => {
         project.addEventListener('click', () => {
             const title = project.getAttribute('data-title');
@@ -12,13 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectURL = project.getAttribute('data-project-url');
             const imagePath = project.getAttribute('data-image-path');
 
-            // Remove existing modal if any
             const existingModal = document.querySelector('.modal');
             if (existingModal) {
                 existingModal.remove();
             }
 
-            // Create modal content
             const modalContent = `
                 <div class="modal">
                     <div class="modal-content">
@@ -33,20 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
 
-            // Append modal to body
             document.body.insertAdjacentHTML('beforeend', modalContent);
-
-            // Show modal
             const modal = document.querySelector('.modal');
             modal.style.display = 'block';
 
-            // Close modal when close button is clicked
             const closeBtn = modal.querySelector('.close');
             closeBtn.addEventListener('click', () => {
                 modal.style.display = 'none';
             });
 
-            // Close modal when clicking outside of modal content
             modal.addEventListener('click', (event) => {
                 if (event.target === modal) {
                     modal.style.display = 'none';
@@ -59,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var learnMoreBtn = document.getElementById('learn-more-btn');
     var experienceSection = document.getElementById('experience');
-    var navHeight = document.querySelector('nav').offsetHeight; // Get the height of the nav bar
+    var navHeight = document.querySelector('nav').offsetHeight;
 
     learnMoreBtn.addEventListener('click', function() {
-        var scrollToPosition = experienceSection.offsetTop - navHeight; // Subtract the nav bar height from the scroll offset
+        var scrollToPosition = experienceSection.offsetTop - navHeight;
         window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
     });
 });
@@ -84,10 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var learnMoreBtn = document.getElementById('learn-more-btn');
     var experienceSection = document.getElementById('experience');
-    var navHeight = document.querySelector('nav').offsetHeight; // Get the height of the nav bar
+    var navHeight = document.querySelector('nav').offsetHeight;
 
     learnMoreBtn.addEventListener('click', function() {
-        var scrollToPosition = experienceSection.offsetTop - navHeight; // Subtract the nav bar height from the scroll offset
+        var scrollToPosition = experienceSection.offsetTop - navHeight;
         window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
     });
 
@@ -95,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default anchor click behavior
-            var targetId = link.getAttribute('href').substring(1); // Get target section id
-            var targetSection = document.getElementById(targetId); // Get target section
-            var scrollToPosition = targetSection.offsetTop - navHeight; // Subtract the nav bar height from the scroll offset
-            window.scrollTo({ top: scrollToPosition, behavior: 'smooth' }); // Smooth scroll to the target section
+            event.preventDefault();
+            var targetId = link.getAttribute('href').substring(1);
+            var targetSection = document.getElementById(targetId);
+            var scrollToPosition = targetSection.offsetTop - navHeight;
+            window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
         });
     });
 });
@@ -108,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var darkModeToggle = document.getElementById('dark-mode-toggle');
     var body = document.body;
-
     var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
     if (isDarkMode) {
@@ -144,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeToggle.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
 
-        // Toggle dark mode for each section
         sections.forEach(function(section) {
             section.classList.toggle('dark-mode');
         });
