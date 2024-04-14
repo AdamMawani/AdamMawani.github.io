@@ -358,8 +358,8 @@ h3 {
     background-color: var(--light-gray);
 }
 
-.dark-mode award:hover {
-    background-color: var(--slate-gray)
+.dark-mode .award:hover {
+    background-color: var(--charcoal-gray)
 }
 
 .award-box {
