@@ -24,12 +24,12 @@ nav ul {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    background-color: var(--navy-blue); /* Set the background color of the entire nav bar */
+    background-color: var(--navy-blue);
 }
 
 nav ul li {
     margin: 0 20px;
-    flex-grow: 1; /* Distribute equal space for each list item */
+    flex-grow: 1;
     text-align: center;
 }
 
@@ -42,34 +42,34 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: var(--white); /* Change background color of list item when hovered over */
+    background-color: var(--white);
 }
 
 nav ul li:hover a {
-    color: var(--navy-blue); /* Change text color when hovered over */
+    color: var(--navy-blue);
 }
 
 nav, h1, h2, h3, h4, h5, h6, p, li, a {
-    color: var(--navy-blue); /* Set default text color to navy blue */
+    color: var(--navy-blue);
 }
 
 .container {
     max-width: 800px;
     margin: 50px auto;
     padding: 0 20px;
-    text-align: center; /* Center all content within the container */
+    text-align: center;
 }
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: 48px; /* Larger font size for the name */
+    font-size: 48px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 h2 {
     font-family: 'Lora', serif;
-    font-size: 24px; /* Smaller font size for subtitles */
+    font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -93,25 +93,25 @@ section ul li img {
 }
 
 .resume-content h2 {
-    font-size: 28px; /* Larger font size for resume section headers */
+    font-size: 28px;
 }
 
 #contact {
-    background-color: var(--light-gray); /* Light grey background for contact section */
+    background-color: var(--light-gray);
     padding: 20px;
 }
 
 #contact ul {
-    display: flex; /* Display icons side by side */
-    justify-content: center; /* Center icons horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 #contact ul li {
-    margin: 0 10px; /* Add space between icons */
+    margin: 0 10px;
 }
 
 #copyright {
-    margin-top: 50px; /* Add space between content and copyright notice */
+    margin-top: 50px;
     text-align: center;
     font-size: 14px;
 }
@@ -121,7 +121,7 @@ section ul li img {
 }
 
 .contact-icon i {
-    font-size: 4em; /* Increase icon size */
+    font-size: 4em;
 }
 
 #contact {
@@ -130,10 +130,9 @@ section ul li img {
 }
 
 #copyright {
-    margin-top: 20px; /* Decrease margin top for copyright statement */
+    margin-top: 20px;
 }
 
-/* Color Palette */
 :root {
     --navy-blue: #001f3f;
     --charcoal-gray: #36454F;
@@ -147,20 +146,20 @@ section ul li img {
 }
 
 section {
-    background-color: var(--white); /* White background for sections */
+    background-color: var(--white);
 }
 
 h1, h2 {
-    color: var(--navy-blue); /* Navy blue for main headings */
+    color: var(--navy-blue);
 }
 
 .container {
-    color: var(--charcoal-gray); /* Charcoal gray for text content */
+    color: var(--charcoal-gray);
 }
 
 .timeline {
     position: relative;
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 50px;
 }
 
 .experience {
@@ -230,15 +229,15 @@ h3 {
 }
 
 #learn-more-btn {
-    margin-top: 20px; /* Adjust the top margin to add space */
+    margin-top: 20px;
     background-color: var(--white);
     color: var(--navy-blue);
     border: 2px solid var(--navy-blue);
-    padding: 20px; /* Increase padding for larger button */
+    padding: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
 }
 
 #learn-more-btn:hover {
@@ -290,7 +289,7 @@ h3 {
 .skills-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px; /* Added margin */
+    margin: 0 20px;
 }
 
 .skills-left {
@@ -304,7 +303,7 @@ h3 {
 }
 
 .skills-right .progress-bar {
-    margin-bottom: 30px; /* Increased margin */
+    margin-bottom: 30px;
 }
 
 .progress-bar {
@@ -344,14 +343,14 @@ h3 {
 }
 
 .award h3 {
-    font-size: 20px; /* Reduce font size for award titles */
-    margin-bottom: 10px; /* Adjust spacing between award title and issuer/date */
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .award p {
-    font-size: 16px; /* Reduce font size for issuer/date */
-    margin: 0; /* Reset margin to remove default spacing */
-    line-height: 1.5; /* Improve line height for readability */
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .award:hover {
@@ -366,15 +365,15 @@ h3 {
 display: inline-block;
 margin: 10px;
 border: 1px solid #ccc;
-overflow: hidden; /* Ensure the container respects the image dimensions */
-width: 200px; /* Set the width of the award box */
-height: auto; /* Let the height adjust according to the image */
+overflow: hidden;
+width: 200px;
+height: auto;
 }
 
 .award-box img {
 display: block;
-width: 100%; /* Ensure the image fills the container */
-height: auto; /* Maintain aspect ratio */
+width: 100%;
+height: auto;
 }
 
 .award-box h3,
@@ -413,11 +412,9 @@ transition: transform 0.3s ease;
 transform: scale(1.1);
 }
 
-/* Dark mode styles */
 .dark-mode {
-    /* Switch text colors */
     nav, h1, h2, h3, h4, h5, h6, p, li, a {
-        color: var(--white); /* Change text color to white */
+        color: var(--white);
     }
 
     body {
@@ -435,25 +432,24 @@ transform: scale(1.1);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000; /* Ensure the button is above other elements */
+    z-index: 1000;
 }
 
-/* Dark mode styles */
 .dark-mode {
     background-color: var(--dark-gray);
     color: white;
 }
 
 .dark-mode section {
-    background-color: var(--dark-gray); /* Change section background to black */
+    background-color: var(--dark-gray);
 }
 
 .dark-mode nav {
-    background-color: #fff; /* Change nav background to white */
+    background-color: #fff;
 }
 
 .dark-mode nav ul li a {
-    color: var(--dark-gray); /* Change nav link color to black */
+    color: var(--dark-gray);
 }
 
 .dark-mode h1,
@@ -464,40 +460,40 @@ transform: scale(1.1);
 .dark-mode h6,
 .dark-mode p,
 .dark-mode li {
-    color: #fff; /* Change text color to white */
+    color: #fff;
 }
 
 .dark-mode #learn-more-btn {
-    background-color: #fff; /* Change button background to white */
-    color: var(--dark-gray); /* Change button text color to black */
+    background-color: #fff;
+    color: var(--dark-gray);
 }
 
 .dark-mode .container {
-    color: #fff; /* Change container text color to white */
+    color: #fff;
 }
 
 .dark-mode #contact .contact-icon {
-    color: #fff; /* Change contact icon color to white */
+    color: #fff;
 }
 
 .dark-mode .progress-bar .progress {
-    background-color: #fff; /* Change progress bar color to white */
+    background-color: #fff;
 }
 
 .dark-mode #education,
 .dark-mode #awards,
 .dark-mode #skills,
 .dark-mode #contact {
-    background-color: var(--charcoal-gray); /* Change grey background sections to black */
+    background-color: var(--charcoal-gray);
 }
 
 .dark-mode nav,
 .dark-mode section {
-    padding: 20px; /* Change padding between sections to black */
+    padding: 20px;
 }
 
 .dark-mode nav ul li a {
-    color: white; /* Change text color to white */
+    color: white;
 }
 
 .dark-mode nav {
@@ -558,22 +554,22 @@ height: auto;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 9999;
     left: 50;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
 
 .close {
@@ -590,30 +586,29 @@ height: auto;
     cursor: pointer;
 }
 
-/* Dark mode styles for modal */
 .dark-mode .modal {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dark-mode .modal-content {
-    background-color: #222; /* Dark background for modal content */
-    color: #fff; /* White text color */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adjust box shadow for contrast */
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .modal-content h2,
 .dark-mode .modal-content p {
-    color: #fff; /* White text color for headings and paragraphs */
+    color: #fff;
 }
 
 .dark-mode .modal-content .close {
-    color: #aaa; /* Light gray color for close button in dark mode */
+    color: #aaa;
 }
 
 .non-modal-image {
-    transition: transform 0.3s ease-in-out; /* Transition for transform property */
+    transition: transform 0.3s ease-in-out;
 }
 
 .non-modal-image:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
