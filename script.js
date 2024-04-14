@@ -167,3 +167,45 @@ const body = document.body;
 darkModeButton.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var darkModeToggle = document.getElementById('dark-mode-toggle');
+    var body = document.body;
+    var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        isDarkMode = !isDarkMode;
+        if (isDarkMode) {
+            enableDarkMode();
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.textContent = 'Light Mode'; // Change button text to "Light Mode"
+        } else {
+            disableDarkMode();
+            localStorage.setItem('darkMode', null);
+            darkModeToggle.textContent = 'Dark Mode'; // Change button text back to "Dark Mode"
+        }
+    }
+
+    // Initial dark mode state
+    if (isDarkMode) {
+        enableDarkMode();
+        darkModeToggle.textContent = 'Light Mode'; // Change button text to "Light Mode" if dark mode is enabled initially
+    } else {
+        disableDarkMode();
+        darkModeToggle.textContent = 'Dark Mode'; // Change button text to "Dark Mode" if dark mode is disabled initially
+    }
+
+    // Event listener for dark mode toggle button
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+
+    // Function to enable dark mode
+    function enableDarkMode() {
+        body.classList.add('dark-mode');
+    }
+
+    // Function to disable dark mode
+    function disableDarkMode() {
+        body.classList.remove('dark-mode');
+    }
+});
