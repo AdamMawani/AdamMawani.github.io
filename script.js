@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p><strong>Competition/Program:</strong> ${competition}</p>
                         <p><strong>Skills Demonstrated:</strong> ${skills}</p>
                         <p><strong>Description:</strong> ${description}</p>
-                        <p><strong>Link:</strong> <a href="${projectURL}" target="_blank">${title}</a></p>
+                        <p><strong>Link:</strong> <a href="${projectURL}" target="_blank" rel="noopener noreferrer">${title}</a></p>
                     </div>
                 </div>
             `;
