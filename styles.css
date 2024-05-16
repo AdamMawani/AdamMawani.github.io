@@ -304,14 +304,6 @@ h3 {
     background-color: var(--light-green);
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 45%;
-    }
-}
 .awards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -378,7 +370,7 @@ transform: scale(1.1);
 
 .dark-mode {
     nav, h1, h2, h3, h4, h5, h6, p, li, a {
-        color: var(--white);
+        color: white;
     }
 
     body {
@@ -397,11 +389,6 @@ transform: scale(1.1);
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
-}
-
-.dark-mode {
-    background-color: var(--dark-gray);
-    color: white;
 }
 
 .dark-mode section {
@@ -423,21 +410,16 @@ transform: scale(1.1);
 .dark-mode h5,
 .dark-mode h6,
 .dark-mode p,
-.dark-mode li {
-    color: #fff;
+.dark-mode li,
+.dark-mode .container,
+.dark-mode #contact .contact-icon,
+.dark-mode nav ul li a {
+    color: white;
 }
 
 .dark-mode #learn-more-btn {
     background-color: #fff;
     color: var(--dark-gray);
-}
-
-.dark-mode .container {
-    color: #fff;
-}
-
-.dark-mode #contact .contact-icon {
-    color: #fff;
 }
 
 .dark-mode .progress-bar .progress {
@@ -454,10 +436,6 @@ transform: scale(1.1);
 .dark-mode nav,
 .dark-mode section {
     padding: 20px;
-}
-
-.dark-mode nav ul li a {
-    color: white;
 }
 
 .dark-mode nav {
