@@ -361,27 +361,6 @@ h3 {
     background-color: var(--charcoal-gray)
 }
 
-.award-box {
-display: inline-block;
-margin: 10px;
-border: 1px solid #ccc;
-overflow: hidden;
-width: 200px;
-height: auto;
-}
-
-.award-box img {
-display: block;
-width: 100%;
-height: auto;
-}
-
-.award-box h3,
-.award-box p {
-text-align: center;
-margin: 5px 0;
-}  
-
 .project-container {
 display: flex;
 flex-wrap: wrap;
