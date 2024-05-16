@@ -48,17 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    var learnMoreBtn = document.getElementById('learn-more-btn');
-    var experienceSection = document.getElementById('experience');
-    var navHeight = document.querySelector('nav').offsetHeight;
-
-    learnMoreBtn.addEventListener('click', function() {
-        var scrollToPosition = experienceSection.offsetTop - navHeight;
-        window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     var navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(function(link) {
@@ -173,38 +162,33 @@ document.addEventListener('DOMContentLoaded', function() {
     var body = document.body;
     var isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
-    // Function to toggle dark mode
     function toggleDarkMode() {
         isDarkMode = !isDarkMode;
         if (isDarkMode) {
             enableDarkMode();
             localStorage.setItem('darkMode', 'enabled');
-            darkModeToggle.textContent = 'Light Mode'; // Change button text to "Light Mode"
+            darkModeToggle.textContent = 'Light Mode';
         } else {
             disableDarkMode();
             localStorage.setItem('darkMode', null);
-            darkModeToggle.textContent = 'Dark Mode'; // Change button text back to "Dark Mode"
+            darkModeToggle.textContent = 'Dark Mode';
         }
     }
 
-    // Initial dark mode state
     if (isDarkMode) {
         enableDarkMode();
-        darkModeToggle.textContent = 'Light Mode'; // Change button text to "Light Mode" if dark mode is enabled initially
+        darkModeToggle.textContent = 'Light Mode';
     } else {
         disableDarkMode();
-        darkModeToggle.textContent = 'Dark Mode'; // Change button text to "Dark Mode" if dark mode is disabled initially
+        darkModeToggle.textContent = 'Dark Mode';
     }
 
-    // Event listener for dark mode toggle button
     darkModeToggle.addEventListener('click', toggleDarkMode);
 
-    // Function to enable dark mode
     function enableDarkMode() {
         body.classList.add('dark-mode');
     }
 
-    // Function to disable dark mode
     function disableDarkMode() {
         body.classList.remove('dark-mode');
     }
