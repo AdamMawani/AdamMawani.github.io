@@ -92,10 +92,6 @@ section ul li img {
     margin-right: 10px;
 }
 
-.resume-content h2 {
-    font-size: 28px;
-}
-
 #contact {
     background-color: var(--light-gray);
     padding: 20px;
@@ -178,17 +174,6 @@ h1, h2 {
 h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.duration {
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-.job-title {
-    font-weight: bold;
-    margin-bottom: 5px;
 }
 
 .timeline-wrap {
