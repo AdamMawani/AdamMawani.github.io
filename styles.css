@@ -112,6 +112,14 @@ section ul li img {
     font-size: 14px;
 }
 
+.award-icon {
+    color: black;
+}
+
+.award-icon i {
+    font-size: 4em;
+}
+
 .contact-icon {
     color: var(--dark-green);
 }
