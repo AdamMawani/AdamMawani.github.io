@@ -112,12 +112,12 @@ section ul li img {
     font-size: 14px;
 }
 
-.award-icon {
+.linked-icon {
     color: black;
 }
 
-.award-icon i {
-    font-size: 4em;
+.linked-icon i {
+    font-size: 1.5em;
 }
 
 .contact-icon {
