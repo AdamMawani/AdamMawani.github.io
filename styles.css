@@ -341,9 +341,9 @@ h3 {
     background-color: var(--light-gray);
 }
 
-.dark-mode .award:hover {
+/* .dark-mode .award:hover {
     background-color: var(--charcoal-gray)
-}
+} */
 
 .project-container {
 display: flex;
@@ -375,7 +375,7 @@ transition: transform 0.3s ease;
 transform: scale(1.1);
 }
 
-.dark-mode {
+/* .dark-mode {
     nav, h1, h2, h3, h4, h5, h6, p, li, a {
         color: white;
     }
@@ -451,7 +451,7 @@ transform: scale(1.1);
 
 .dark-mode nav ul li a:hover {
     color: var(--dark-gray);
-}
+} */
 
 #about,
 #experience,
@@ -460,12 +460,12 @@ transform: scale(1.1);
     background-color: var(--white);
 }
 
-.dark-mode #about,
+/* .dark-mode #about,
 .dark-mode #experience,
 .dark-mode #awards,
 .dark-mode #projects {
     background-color: var(--dark-gray);
-}
+} */
 
 .progress-bar {
     position: relative;
@@ -535,7 +535,7 @@ height: auto;
     cursor: pointer;
 }
 
-.dark-mode .modal {
+/* .dark-mode .modal {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -552,7 +552,7 @@ height: auto;
 
 .dark-mode .modal-content .close {
     color: #aaa;
-}
+} */
 
 .non-modal-image {
     transition: transform 0.3s ease-in-out;
